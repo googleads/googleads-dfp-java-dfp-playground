@@ -26,9 +26,9 @@ please do so first at https://appengine.google.com.
 You will also need to register an OAuth2 application to get a valid client ID and secret. When
 registering the application, be sure to include the following callbacks:
 
-   http://localhost:8888/oauth2callback
+   `http://localhost:8888/oauth2callback
    http://test.<your-app-id>.appspot.com/oauth2callback
-   http://<your-app-id>.appspot.com/oauth2callback
+   http://<your-app-id>.appspot.com/oauth2callback`
 
 The first callback is intended for local development, the second is for the test version of your app (the default in the web.xml),
 and the third is for your production application.
