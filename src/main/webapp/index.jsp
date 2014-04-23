@@ -91,8 +91,8 @@ limitations under the License. -->
         <div id="dfp-get-help-options" class="menu">
           <a href="https://developers.google.com/doubleclick-publishers/docs/start" target="_blank">Documentation</a>
           <a href="http://groups.google.com/group/google-doubleclick-for-publishers-api/topics" target="_blank">Product help center</a>
-          <a href="https://code.google.com/p/google-api-ads-java/issues/list" target="_blank">Report issues</a>
-          <a href="http://goo.gl/DaIAx" target="_blank">View source for playground</a>
+          <a href="https://github.com/googleads/googleads-dfp-java-dfp-playground/issues" target="_blank">Report issues</a>
+          <a href="https://github.com/googleads/googleads-dfp-java-dfp-playground" target="_blank">View source for playground</a>
         </div>
       </div>
 

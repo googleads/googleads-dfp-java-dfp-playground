@@ -37,7 +37,7 @@ and the third is for your production application.
 
 ### For using maven with Eclipse
 
-In the [releases section](https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-maven-v.v.v.tar.gz` and extract it.
+In the [releases section](https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-maven-project-v.v.v.tar.gz` and extract it.
 
 The rest of the dependencies will be automatically pulled in using Maven, but you
 can examine and modify them through the project's pom.xml if you wish.
@@ -110,7 +110,7 @@ To build and run the project locally, follow these steps:
    ```
    http://APP_ID.appspot.com/oauth2callback
    https://APP_ID.appspot.com/oauth2callback
-   ```   
+   ```
 
 3. Replace the application ID (dfp-playground) in
    src/main/webapp/WEB-INF/appengine-web.xml with your App Engine application ID

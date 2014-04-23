@@ -33,7 +33,7 @@
   </description>
 
   <properties>
-    <appengine.app.version>test</appengine.app.version>
+    <appengine.app.version>1</appengine.app.version>
     <appengine.target.version>1.8.9</appengine.target.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
