@@ -26,11 +26,11 @@ please do so first at https://appengine.google.com.
 You will also need to register an OAuth2 application to get a valid client ID and secret. When
 registering the application, be sure to include the following callbacks:
 
-```
+   ```
    http://localhost:8888/oauth2callback
    http://test.<your-app-id>.appspot.com/oauth2callback
    http://<your-app-id>.appspot.com/oauth2callback
-```
+   ```
 
 The first callback is intended for local development, the second is for the test version of your app (the default in the web.xml),
 and the third is for your production application.
@@ -51,24 +51,53 @@ To build and run the project locally, follow these steps:
    secret in the API console (https://code.google.com/apis/console#access) using
    the redirect URI below:
 
-
+   ```
    http://localhost:8888/oauth2callback
    https://localhost:8888/oauth2callback
+   ```
 
-2. Build
+2. Import
 
-   Run the following Maven command to download the dependencies and compile the
-   project:
+   Open Eclipse, and import the project by going to **File > Import**, then **Maven > Existing Maven Projects**
+   and selecting the extracted folder.
 
-   $ mvn compile
+3. Run from Eclipse
 
-3. Run
+   Within the project, open the folder eclipse-launch-profiles. Right-click DevAppServer.launch,
+   and then select **Run As > DevAppServer**.
 
-   Build the war and run the project:
+   The playground will be running at: http://localhost:8888/
 
+4. (Optional) Run from the command line
+
+   From the root of the project, run:
+
+   ```
    $ mvn appengine:devserver
+   ```
 
-4. The playground should be running at: http://localhost:8080/
+   The playground will be running at: http://localhost:8888/
+
+5. (Optional) Debug
+   
+   The DevAppServerWithDebugFlag.launch launch profile can be used to launch the server
+   with debug flags so that you can connect a remote debugger. 
+
+   To do so, open the folder eclipse-launch-profiles. Right-click DevAppServerWithDebugFlag.launch,
+   and then select **Run As > DevAppServerWithDebugFlag**.
+
+   The server will load as usual, but stop with following output:
+
+   ```
+   [INFO] Listening for transport dt_socket at address: 1044
+   ```
+
+   At this point, right-click RemoteDebugDevAppServer.launch,
+   and then select **Debug As > RemoteDebugDevAppServer**. The server will continue to run
+   until it reaches your breakpoint.
+
+   If no source is found, you may have to attach the project manually in the source lookup
+   dialog.
 
 #### Deploying to App Engine
 
@@ -78,8 +107,10 @@ To build and run the project locally, follow these steps:
    need to add a redirect URI that corresponds to the application ID of your
    newly created App Engine application:
 
+   ```
    http://APP_ID.appspot.com/oauth2callback
    https://APP_ID.appspot.com/oauth2callback
+   ```
 
 3. Replace the application ID (dfp-playground) in
    src/main/webapp/WEB-INF/appengine-web.xml with your App Engine application ID
@@ -88,9 +119,13 @@ To build and run the project locally, follow these steps:
 
    $ mvn appengine:update
 
+   Alternatively, you can update the project from within Eclipse by using the
+   UpdateApplication.launch profile. Open the eclipse-launch-profiles folder,
+   right-click UpdateApplication.launch, and then select **Run As > UpdateApplication**.
+
 ### For using the Google Plugin for Eclipse (with jars)
 
-In the [releases section](https://github.com/googleads/googleads-java-lib/releases) download a file like ``dfp-playground-jars-and-google-eclipse-plugin-project-v.v.v.tar.gz`` and extract it.
+In the [releases section](https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-jars-and-google-eclipse-plugin-project-v.v.v.tar.gz` and extract it.
 
 If you are not familiar with the Google Plugin for Eclipse, please read through this [getting started guide](https://developers.google.com/eclipse/docs/getting_started)
 
@@ -101,29 +136,30 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
    secret in the API console (https://code.google.com/apis/console#access) using
    the redirect URI below:
 
+   ```
    http://localhost:8888/oauth2callback
    https://localhost:8888/oauth2callback
+   ```
 
 2. Import
 
-   Open Eclipse, and import the project by going to File > Import, then General > Existing projects
+   Open Eclipse, and import the project by going to **File > Import**, then **General > Existing projects into workspace**
    and selecting the extracted folder.
 
-   *IMPORTANT:* The project will not compile at this stage. The next step will complete the process.
+   **IMPORTANT:** The project will not compile at this stage. The next step will complete the process.
 
 3. Setup
 
-   Add Google AppEngine functionality to the project: right-click your project and
-   select Google > App Engine Settings. Check the Use Google App Engine box and click OK.
+   Next, add Google AppEngine functionality to the project. Right-click your project and
+   select **Google > App Engine Settings**. Check the **Use Google App Engine box** and click **OK**.
 
    The project should now compile and not have any build errors.
 
 4. Run
    
-   Right click your project and then select Run As > Web Application.
+   Right-click your project and then select **Run As > Web Application**.
 
-5. The playground should be running at: http://localhost:8888/
-   
+   The playground will be running at: http://localhost:8888/
    
 #### Deploying to App Engine
 
@@ -139,7 +175,7 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
 3. Replace the application ID (dfp-playground) in
    war/WEB-INF/appengine-web.xml with your App Engine application ID
 
-4. Right click your project and then select Google > Deploy to AppEngine.
+4. Right-click your project and then select **Google > Deploy to AppEngine**.
  
    For more information about deploying AppEngine projects, see the [developer site](https://developers.google.com/eclipse/docs/appengine_deploy).
 
