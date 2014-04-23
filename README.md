@@ -15,7 +15,7 @@ on them using PQL filter statements if you wish.
 This project can be used in two ways. You have the option to use Maven as your
 build and deploy mechanism or simply as jars coupled with the
 [Google Plugin for Eclipse](https://developers.google.com/appengine/docs/java/tools/eclipse)
-and/or [appcfg tool](https://developers.google.com/appengine/docs/java/tools/uploadinganapp) and 
+and/or [appcfg tool](https://developers.google.com/appengine/docs/java/tools/uploadinganapp).
 
 
 ### Before you do anything
@@ -26,18 +26,20 @@ please do so first at https://appengine.google.com.
 You will also need to register an OAuth2 application to get a valid client ID and secret. When
 registering the application, be sure to include the following callbacks:
 
-   `http://localhost:8888/oauth2callback
+```
+   http://localhost:8888/oauth2callback
    http://test.<your-app-id>.appspot.com/oauth2callback
-   http://<your-app-id>.appspot.com/oauth2callback`
+   http://<your-app-id>.appspot.com/oauth2callback
+```
 
 The first callback is intended for local development, the second is for the test version of your app (the default in the web.xml),
 and the third is for your production application.
 
 ### For using maven with Eclipse
 
-In the [releases section](https://github.com/googleads/googleads-java-lib/releases) download a file like ``adwords-axis-maven-and-examples-v.vv.vv.tar.gz`` and extract it.
+In the [releases section]https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-maven-v.v.v.tar.gz` and extract it.
 
-The rest of the dependencies will be automatically pulled in using Maven but you
+The rest of the dependencies will be automatically pulled in using Maven, but you
 can examine and modify them through the project's pom.xml if you wish.
 
 To build and run the project locally, follow these steps:
@@ -49,8 +51,9 @@ To build and run the project locally, follow these steps:
    secret in the API console (https://code.google.com/apis/console#access) using
    the redirect URI below:
 
-   http://localhost:8080/oauth2callback
-   https://localhost:8080/oauth2callback
+
+   http://localhost:8888/oauth2callback
+   https://localhost:8888/oauth2callback
 
 2. Build
 
@@ -122,7 +125,7 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
 5. The playground should be running at: http://localhost:8888/
    
    
-###$ Deploying to App Engine
+#### Deploying to App Engine
 
 1. Create an App Engine application at https://appengine.google.com/.
 
