@@ -37,7 +37,7 @@ and the third is for your production application.
 
 ### For using maven with Eclipse
 
-In the [releases section]https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-maven-v.v.v.tar.gz` and extract it.
+In the [releases section](https://github.com/googleads/googleads-dfp-java-dfp-playground/releases) download a file like `dfp-playground-maven-v.v.v.tar.gz` and extract it.
 
 The rest of the dependencies will be automatically pulled in using Maven, but you
 can examine and modify them through the project's pom.xml if you wish.
@@ -70,7 +70,7 @@ To build and run the project locally, follow these steps:
 
 4. (Optional) Run from the command line
 
-   From the root of the project, run:
+   From the root of the project directory, run:
 
    ```
    $ mvn appengine:devserver
@@ -117,7 +117,9 @@ To build and run the project locally, follow these steps:
 
 4. Run the following (you will be prompted for your username and password):
 
+   ```
    $ mvn appengine:update
+   ```
 
    Alternatively, you can update the project from within Eclipse by using the
    UpdateApplication.launch profile. Open the eclipse-launch-profiles folder,
@@ -169,8 +171,10 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
    need to add a redirect URI that corresponds to the application ID of your
    newly created App Engine application:
 
+   ```
    http://APP_ID.appspot.com/oauth2callback
    https://APP_ID.appspot.com/oauth2callback
+   ```
 
 3. Replace the application ID (dfp-playground) in
    war/WEB-INF/appengine-web.xml with your App Engine application ID
