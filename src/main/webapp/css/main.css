@@ -1,0 +1,405 @@
+/**
+ * Copyright 2011, Google Inc. All Rights Reserved.
+ *
+ * Main stylesheet file for the application.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Author: api.ekoleda@gmail.com (Eric Koleda)
+ * Author: api.shamjeff@gmail.com (Jeff Sham)
+ */
+
+/* Hyperlink style */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Hyperlink hover style */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Account info */
+#dfp-account {
+  float: right;
+  padding: 0 0 0 3px;
+  margin-left: 5px;
+}
+
+/* Always underline Sign in/out */
+#dfp-account a {
+  text-decoration: underline;
+}
+
+/* Panels */
+#dfp-panels {
+  overflow: hidden;
+}
+
+/* A panel */
+.dfp-panel {
+  width: 400px;
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 0;
+  float: left;
+  background-color: white;
+  min-height: 450px;
+  position: relative;
+}
+
+/* Reload and expand link of a panel */
+.dfp-reload,
+.dfp-expand {
+  float: right;
+  margin: 10px 8px 0 0;
+  font-weight: bold;
+  font-size: 10pt;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* Headline of a panel */
+.dfp-panel h2 {
+  height: 25px;
+  margin: 0;
+}
+
+/* Header that will be rounded */
+.dfp-rc-header {
+  background-color: #2E669F;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#2E669F), to(#25588B));
+  color: white;
+  font-weight: bold;
+  padding: 5px 0 0 8px;
+  margin: 3px;
+}
+
+/* MOE:begin_strip */
+/* Class to indicate an element for internal viewing only */
+.ics {
+  color: black;
+  background-color: #FFF3BD;
+  border-color: #FFCC34;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: separate;
+}
+
+/* Impersonate links in user results */
+.dfp-impersonate-link {
+  color: grey;
+  padding-left: 5px;
+}
+
+/* Account user display with impersonation state */
+#dfp-account-user.impersonation {
+  background-color: #666;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, black),
+      color-stop(1, #666));
+  color: white;
+}
+
+/* Widget for network code changes */
+#dfp-network-widget {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  top: 1px;
+}
+
+#dfp-network-widget, .dfp-menu-header {
+  display: inline;
+  position: relative;
+}
+/* MOE:end_strip */
+
+/* Menu drop down display styles */
+.dfp-menu-header {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  font-weight: normal;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Drop-down menu styles */
+.menu {
+/*   left: 0; */
+  position: absolute;
+  top: 19px;
+  border: 1px solid #666;
+  padding: 5px 12px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  z-index: 101;
+  cursor: default;
+  margin-top: 5px;
+  max-width: 250px;
+  min-width: 150px;
+}
+
+/* menu link styles */
+#dfp-user-menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a {
+  text-decoration: none;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.menu a:visited {
+color: #7984AA;
+}
+
+.menu a:link {
+color: #06C;
+}
+
+.menu a {
+color: #06C;
+}
+
+/* Drop-down indicator arrow */
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/* Nudge get help menus to the left so it stays on screen */
+#dfp-get-help-options {
+  margin-left: -100px;
+}
+
+/* Content area for a panel */
+.dfp-panel-content {
+  padding: 5px 10px 10px 10px;
+  height: 360px;
+  overflow: auto;
+  margin: 1px;
+}
+
+/* Lists with panels */
+.dfp-panel-content ul,
+.dfp-panel-content ol {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+/* Tables within panels */
+.dfp-panel table,
+.ui-dialog-content table {
+  width: 100%; border : 1px solid black;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+/* Table cells within panels and dialog */
+.dfp-panel th,
+.dfp-panel td,
+.ui-dialog-content th,
+.ui-dialog-content td {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 0 3px;
+}
+
+/* Alternating rows in table within panels and dialog */
+.dfp-panel tr:nth-child(even),
+.ui-dialog-content tr:nth-child(even) {
+  background-color: #EEE;
+}
+
+/* Filter panel */
+.dfp-panel-filter {
+  border-top: 2px solid #125488;
+  background-color: #DDD;
+  height: 36px;
+}
+
+/* Filter header */
+.dfp-panel-filter h3 {
+  background-image: url('../images/arrow-square.gif');
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+  padding: 7px 11px 7px 28px;
+  margin: 0;
+  cursor: pointer;
+  bottom: 0;
+}
+
+/* Filter header active */
+.dfp-panel-filter h3.active {
+  background-position: 5px -48px;
+  border-bottom: 2px solid #125488;
+}
+
+/* Filter panel content */
+.dfp-panel-filter-content {
+  background: #f7f7f7;
+  margin: 0;
+  padding: 8px;
+  display: none;
+  height: 70px;
+  clear: both;
+}
+
+/* Filter button */
+.dfp-filter-button {
+  float: right;
+  margin: 0 0 5px 0;
+}
+
+/* Filter textarea */
+.dfp-filter-textarea {
+  width: 377px;
+  height: 32px;
+  display: block;
+}
+
+/* Container for filter buttons and drop-downs */
+.dfp-filter-footer {
+  display: block;
+  margin-top: 4px;
+}
+
+/* Filter drop-down to pick filtering mode */
+.dfp-filter-select {
+  margin-left: 2px;
+}
+
+/* Class applied to a panel loading view */
+.dfp-loading {
+  background-image: url('../images/ajax-loader.gif');
+  background-position: left center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+/* Class applied to a panel while loading */
+.dfp-loading a {
+  margin-left: 25px;
+}
+
+/* Class applied to error messages */
+.dfp-error {
+  color: red;
+}
+
+/* Class applied to info messages */
+.dfp-info {
+  color: grey;
+  font-style: italic;
+}
+
+/* Class applied to reference link */
+.dfp-reference-link {
+ float: right;
+ margin: 7px 20px 0 0;
+}
+
+/* Class applied to detail link */
+.dfp-details-link {
+  color: grey;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+/* Class applied to hidden detail information */
+.dfp-details {
+  display: none;
+}
+
+/* Signin tooltip */
+#dfp-signin-tooltip {
+  display: none;
+  padding-left: 2px;
+  margin: 0;
+  float: left;
+  position: absolute;
+  top: 25px;
+  right: 9px;
+  height: 18px;
+  background-color: #FDFFCA;
+  border: 1px solid grey;
+}
+
+/* Sign up warning shown when account is not whitelisted */
+#dfp-sign-up-warning {
+  display: none;
+  float: left;
+  width: 700px;
+  padding: 1px 2px 1px 2px;
+  top: 5px;
+  background-color: #FFCC33;
+  border: 1px solid grey;
+}
+
+/* Widget header */
+.ui-widget-header {
+  background-color: #158;
+  color: white;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+  display: block;
+}
+
+/* border radius */
+.dfp-rc-header, .dfp-panel {
+  border-radius: 5px;
+}
+
+/* Adds rounded corners to panels */
+.dfp-panel-filter, .dfp-panel-filter > h3, .dfp-panel-filter-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Removes rounded corners */
+.dfp-panel-filter > h3.uncorner {
+  border-radius: 0px;
+}
+
+/* Dialog box */
+.dfp-dialog {
+  display: none;
+}
+
+/* Popup for a new network */
+#new-network-welcome-dialog a {
+  color: blue;
+  text-decoration: underline;
+}

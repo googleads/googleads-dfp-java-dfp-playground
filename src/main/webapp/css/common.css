@@ -1,0 +1,64 @@
+/**
+ * Copyright 2012, Google Inc. All Rights Reserved.
+ *
+ * Main stylesheet file for the application.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Author: api.shamjeff@gmail.com (Jeff Sham)
+ */
+
+/* Body */
+body {
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
+/* Header */
+.dfp-header {
+  background-image: url('../images/dfp_logo.png');
+  background-repeat: no-repeat;
+  background-position: 5px 24px;
+  padding: 3px 10px 0 5px;
+  height: 108px;
+}
+
+/* Logo */
+#dfp-logo {
+  padding: 58px 0 0 400px;
+  color: #333;
+}
+
+/* Horizontal rule */
+hr {
+  margin: 2px 0;
+}
+
+/* Application footer */
+#dfp-footer {
+  padding-left: 5px;
+  clear: left;
+}
+
+/* Error */
+.error {
+  color: red;
+}
+
+/* Content */
+.dfp-content {
+  background-color: #E6E9F0;
+  padding: 5px 0 20px 0;
+}

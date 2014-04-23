@@ -58,7 +58,7 @@ To build and run the project locally, follow these steps:
 
 2. Import
 
-   Open Eclipse, and import the project by going to **File > Import**, then **Maven > Existing Maven Projects**
+   Open Eclipse, and import the project by going to  **File > Import**, then **General > Existing projects into workspace**
    and selecting the extracted folder.
 
 3. Run from Eclipse
@@ -110,10 +110,12 @@ To build and run the project locally, follow these steps:
    ```
    http://APP_ID.appspot.com/oauth2callback
    https://APP_ID.appspot.com/oauth2callback
-   ```
+   ```   
 
 3. Replace the application ID (dfp-playground) in
    src/main/webapp/WEB-INF/appengine-web.xml with your App Engine application ID
+
+   You may also want to update the version to something other than `test` (the default).
 
 4. Run the following (you will be prompted for your username and password):
 
@@ -179,6 +181,8 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
 3. Replace the application ID (dfp-playground) in
    war/WEB-INF/appengine-web.xml with your App Engine application ID
 
+   You may also want to update the version to something other than `test` (the default).
+
 4. Right-click your project and then select **Google > Deploy to AppEngine**.
  
    For more information about deploying AppEngine projects, see the [developer site](https://developers.google.com/eclipse/docs/appengine_deploy).
@@ -196,7 +200,7 @@ Post a question to the forum for the community and API advisors:
 https://groups.google.com/forum/#!forum/google-doubleclick-for-publishers-api
 
 Authors:
-    arogal@google.com (Adam Rogal)
+    Adam Rogal
 
 Past contributors:
-    shamjeff@google.com (Jeff Sham)
+    Jeff Sham
