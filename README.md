@@ -68,7 +68,7 @@ To build and run the project locally, follow these steps:
 
   - Run from Eclipse
 
-   Within the project, open the folder eclipse-launch-profiles. Right-click DevAppServer.launch,
+       Within the project, open the folder eclipse-launch-profiles. Right-click DevAppServer.launch,
    and then select **Run As > DevAppServer**.
 
    The playground will be running at: http://localhost:8888/
