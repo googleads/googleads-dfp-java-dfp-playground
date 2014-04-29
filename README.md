@@ -69,19 +69,19 @@ To build and run the project locally, follow these steps:
   - Run from Eclipse
 
        Within the project, open the folder eclipse-launch-profiles. Right-click DevAppServer.launch,
-   and then select **Run As > DevAppServer**.
+       and then select **Run As > DevAppServer**.
 
-   The playground will be running at: http://localhost:8888/
+       The playground will be running at: http://localhost:8888/
 
   - Run from the command line
 
-   From the root of the project directory, run:
+       From the root of the project directory, run:
 
-   ```
-   $ mvn appengine:devserver
-   ```
+       ```
+       $ mvn appengine:devserver
+       ```
 
-   The playground will be running at: http://localhost:8888/
+       The playground will be running at: http://localhost:8888/
 
 5. (Optional) Debug
    
