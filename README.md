@@ -23,13 +23,16 @@ and/or [appcfg tool](https://developers.google.com/appengine/docs/java/tools/upl
 This readme assumes you have already registered an AppEngine application. If you have not,
 please do so first at https://appengine.google.com.
 
-You will also need to register an OAuth2 application to get a valid client ID and secret. When
+You will also need to register a web OAuth2 application to get a valid client ID and secret. When
 registering the application, be sure to include the following callbacks:
 
    ```
    http://localhost:8888/oauth2callback
+   https://localhost:8888/oauth2callback
    http://test.<your-app-id>.appspot.com/oauth2callback
+   https://test.<your-app-id>.appspot.com/oauth2callback
    http://<your-app-id>.appspot.com/oauth2callback
+   https://<your-app-id>.appspot.com/oauth2callback
    ```
 
 The first callback is intended for local development, the second is for the test version of your app (the default in the web.xml),
@@ -48,7 +51,7 @@ To build and run the project locally, follow these steps:
 
    Fill in your client ID and client secret in
    src/main/webapp/WEB-INF/appengine-web.xml You can create the client ID and
-   secret in the API console (https://code.google.com/apis/console#access) using
+   secret in the API console (https://console.developers.google.com) using
    the redirect URI below:
 
    ```
@@ -61,14 +64,16 @@ To build and run the project locally, follow these steps:
    Open Eclipse, and import the project by going to  **File > Import**, then **General > Existing projects into workspace**
    and selecting the extracted folder.
 
-3. Run from Eclipse
+3. Run (using one of the following methods): 
+
+  - Run from Eclipse
 
    Within the project, open the folder eclipse-launch-profiles. Right-click DevAppServer.launch,
    and then select **Run As > DevAppServer**.
 
    The playground will be running at: http://localhost:8888/
 
-4. (Optional) Run from the command line
+  - Run from the command line
 
    From the root of the project directory, run:
 
@@ -103,7 +108,7 @@ To build and run the project locally, follow these steps:
 
 1. Create an App Engine application at https://appengine.google.com/.
 
-2. Follow steps 1 from above. Instead of localhost, you will
+2. Follow step 1 from above. Instead of localhost, you will
    need to add a redirect URI that corresponds to the application ID of your
    newly created App Engine application:
 
@@ -137,7 +142,7 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
 
    Fill in your client ID and client secret in
    war/WEB-INF/appengine-web.xml You can create the client ID and
-   secret in the API console (https://code.google.com/apis/console#access) using
+   secret in the API console (https://console.developers.google.com/project) using
    the redirect URI below:
 
    ```
@@ -169,7 +174,7 @@ If you are not familiar with the Google Plugin for Eclipse, please read through 
 
 1. Create an App Engine application at https://appengine.google.com/.
 
-2. Follow steps 1 from above. Instead of localhost, you will
+2. Follow step 1 from above. Instead of localhost, you will
    need to add a redirect URI that corresponds to the application ID of your
    newly created App Engine application:
 
@@ -200,7 +205,7 @@ Post a question to the forum for the community and API advisors:
 https://groups.google.com/forum/#!forum/google-doubleclick-for-publishers-api
 
 Authors:
-    Adam Rogal
+    arogal@google.com (Adam Rogal)
 
 Past contributors:
-    Jeff Sham
+    shamjeff@google.com (Jeff Sham)
