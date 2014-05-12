@@ -16,11 +16,11 @@ package com.google.api.ads.dfp.appengine.fetcher;
 
 import com.google.api.ads.dfp.appengine.util.Channels;
 import com.google.api.ads.dfp.jaxws.factory.DfpServices;
-import com.google.api.ads.dfp.jaxws.utils.v201306.Pql;
-import com.google.api.ads.dfp.jaxws.v201306.ApiException_Exception;
-import com.google.api.ads.dfp.jaxws.v201306.PublisherQueryLanguageServiceInterface;
-import com.google.api.ads.dfp.jaxws.v201306.ResultSet;
-import com.google.api.ads.dfp.jaxws.v201306.Statement;
+import com.google.api.ads.dfp.jaxws.utils.v201403.Pql;
+import com.google.api.ads.dfp.jaxws.v201403.ApiException_Exception;
+import com.google.api.ads.dfp.jaxws.v201403.PublisherQueryLanguageServiceInterface;
+import com.google.api.ads.dfp.jaxws.v201403.ResultSet;
+import com.google.api.ads.dfp.jaxws.v201403.Statement;
 import com.google.api.ads.dfp.lib.client.DfpSession;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.inject.Inject;

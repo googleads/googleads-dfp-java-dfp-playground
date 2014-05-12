@@ -15,8 +15,8 @@
 package com.google.api.ads.dfp.appengine.fetcher;
 
 import com.google.api.ads.dfp.appengine.util.Channels;
-import com.google.api.ads.dfp.jaxws.utils.v201306.StatementBuilder;
-import com.google.api.ads.dfp.jaxws.v201306.ApiException_Exception;
+import com.google.api.ads.dfp.jaxws.utils.v201403.StatementBuilder;
+import com.google.api.ads.dfp.jaxws.v201403.ApiException_Exception;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 

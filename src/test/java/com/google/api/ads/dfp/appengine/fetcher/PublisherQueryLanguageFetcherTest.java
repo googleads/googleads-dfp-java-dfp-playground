@@ -21,10 +21,10 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import com.google.api.ads.dfp.appengine.util.Channels;
-import com.google.api.ads.dfp.jaxws.v201306.ApiException_Exception;
-import com.google.api.ads.dfp.jaxws.v201306.PublisherQueryLanguageServiceInterface;
-import com.google.api.ads.dfp.jaxws.v201306.ResultSet;
-import com.google.api.ads.dfp.jaxws.v201306.Statement;
+import com.google.api.ads.dfp.jaxws.v201403.ApiException_Exception;
+import com.google.api.ads.dfp.jaxws.v201403.PublisherQueryLanguageServiceInterface;
+import com.google.api.ads.dfp.jaxws.v201403.ResultSet;
+import com.google.api.ads.dfp.jaxws.v201403.Statement;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -16,9 +16,9 @@ package com.google.api.ads.dfp.appengine.fetcher;
 
 import com.google.api.ads.dfp.appengine.util.Channels;
 import com.google.api.ads.dfp.jaxws.factory.DfpServices;
-import com.google.api.ads.dfp.jaxws.v201306.ApiException_Exception;
-import com.google.api.ads.dfp.jaxws.v201306.OrderServiceInterface;
-import com.google.api.ads.dfp.jaxws.v201306.Statement;
+import com.google.api.ads.dfp.jaxws.v201403.ApiException_Exception;
+import com.google.api.ads.dfp.jaxws.v201403.OrderServiceInterface;
+import com.google.api.ads.dfp.jaxws.v201403.Statement;
 import com.google.api.ads.dfp.lib.client.DfpSession;
 import com.google.inject.Inject;
 
