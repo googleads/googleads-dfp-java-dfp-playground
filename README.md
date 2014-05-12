@@ -83,7 +83,7 @@ To build and run the project locally, follow these steps:
 
        The playground will be running at: http://localhost:8888/
 
-5. (Optional) Debug
+4. (Optional) Debug
    
    The DevAppServerWithDebugFlag.launch launch profile can be used to launch the server
    with debug flags so that you can connect a remote debugger. 
@@ -205,7 +205,7 @@ Post a question to the forum for the community and API advisors:
 https://groups.google.com/forum/#!forum/google-doubleclick-for-publishers-api
 
 Authors:
-    arogal@google.com (Adam Rogal)
+    Adam Rogal
 
 Past contributors:
-    shamjeff@google.com (Jeff Sham)
+    Jeff Sham

@@ -78,7 +78,7 @@ public class PlaygroundServletModule extends ServletModule {
 
   /**
    * If you do not have a client ID or secret, please create one in the API console:
-   * https://code.google.com/apis/console#access
+   * https://console.developers.google.com
    */
   private static final String CLIENT_ID = System.getProperty("dfp.appengine.clientId");
   private static final String CLIENT_SECRET = System.getProperty("dfp.appengine.clientSecret");
@@ -159,8 +159,8 @@ public class PlaygroundServletModule extends ServletModule {
           }
         });
 
-    if (CLIENT_ID.equals("INSERT_CLIENT_ID_HERE")
-        || CLIENT_SECRET.equals("INSERT_CLIENT_SECRET_HERE")) {
+    if (CLIENT_ID == null || CLIENT_ID.equals("INSERT_CLIENT_ID_HERE")
+        || CLIENT_SECRET == null || CLIENT_SECRET.equals("INSERT_CLIENT_SECRET_HERE")) {
       throw new IllegalArgumentException(
           "Please input your client IDs or secret in your WEB-INF/appengine-web.xml file.");
     }
